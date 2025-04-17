@@ -1,7 +1,7 @@
 :root {
     --main-blue: rgb(58, 0, 94);
     --offwhite: hwb(210 97% 2%);
-    --dark-text: rgb(58, 0, 94);
+    --dark-text: rgba(1, 10, 6, 0.753);
     --highlight: rgb(241, 97, 97);
     --secondary-color: var(--main-blue);
     --gradient: linear-gradient(135deg, #8aeba2 25%, #55d853a3 25%, #e2e2e2 50%, #f3f3f3 50%, #3e60aa 75%, #215dddc0 75%, #105792 100%);
@@ -173,8 +173,6 @@ p {
     border: none;
     border-radius: 10px;
     box-shadow: 10px 2px 90px -11px rgba(13, 100, 76, 0.75);
-    -webkit-box-shadow: 10px 2px 90px -11px rgba(13, 100, 76, 0.75);
-    -moz-box-shadow: 10px 2px 90px -11px rgba(13, 100, 76, 0.75);
 }
 
 .playbox {
@@ -212,9 +210,54 @@ p {
     object-fit: cover;
 }
 
-footer {
-    background-color: #272927;
+
+/*ABOUUTTTT*/
+
+.about-section {
+    margin-top: 4rem;
+    padding: 40px 20px;
     text-align: center;
-    padding: 32px 0;
+}
+
+.about-section .content {
+    min-height: 400px;
+}
+
+.about-section h2 {
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+    color: var(--main-blue);
+}
+
+.about-section p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.about-section .contact-info i {
+    margin-right: 8px;
+    color: var(--main-blue);
+}
+
+.about-section .social-links a {
+    margin: 0 8px;
+    color: var(--main-blue);
+    font-size: 1.3rem;
+    transition: color .2s;
+}
+
+.about-section .social-links a:hover {
+    color: #ff5454;
+}
+
+footer {
+    background-color: #4fb88c;
+    text-align: center;
+    padding: 25px 12px;
     margin-top: 48px;
+}
+
+footer p {
+    color: black;
 }
